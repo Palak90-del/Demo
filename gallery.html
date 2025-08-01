@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seabrew & Co. | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #fdfbf7;
+      --sea-blue: #6ea9b2;
+      --coffee-brown: #855d45;
+      --sandy-beige: #e8dbc5;
+      --charcoal: #2e2e2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--cream);
+      color: var(--charcoal);
+    }
+
+    header {
+      background: var(--sea-blue);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      background: white;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .caption {
+      padding: 1rem;
+      font-weight: 600;
+      color: var(--coffee-brown);
+      text-align: center;
+    }
+
+    footer {
+      background: var(--sandy-beige);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--charcoal);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Seabrew & Co.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cafe.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Gallery</h1>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Coffee Shot" />
+        <div class="caption">Morning Brew Bliss</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c" alt="Cafe Interior" />
+        <div class="caption">Warm Café Vibes</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Beachside Cafe" />
+        <div class="caption">Seaside Serenity</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Brunch Dish" />
+        <div class="caption">Brunch with a View</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Latte Art" />
+        <div class="caption">Latte Perfection</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach View" />
+        <div class="caption">Sights & Seabreeze</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Seabrew & Co. | Demo website by Palak
+  </footer>
+</body>
+</html>
+

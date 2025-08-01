@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seabrew & Co. | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #fdfbf7;
+      --sea-blue: #6ea9b2;
+      --coffee-brown: #855d45;
+      --sandy-beige: #e8dbc5;
+      --charcoal: #2e2e2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--cream);
+      color: var(--charcoal);
+    }
+
+    header {
+      background: var(--sea-blue);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-info div {
+      font-size: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    button {
+      background: var(--coffee-brown);
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #6d4636;
+    }
+
+    footer {
+      background: var(--sandy-beige);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--charcoal);
+    }
+
+    @media(max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Seabrew & Co.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cafe.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div><strong>Address:</strong> 123 Coastal Road, Cornwall, UK</div>
+        <div><strong>Phone:</strong> (123) 456-7890</div>
+        <div><strong>Email:</strong> hello@seabrewco.com</div>
+        <div><strong>Opening Hours:</strong><br />
+          Mon–Fri: 7am – 4pm<br />
+          Sat–Sun: 8am – 5pm
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21499.621272632824!2d-5.073706381271387!3d50.15439399166769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486b3c7e6e34aee7%3A0x5f470aa842b746aa!2sSt%20Ives%2C%20UK!5e0!3m2!1sen!2sin!4v1691453381444!5m2!1sen!2sin" allowfullscreen></iframe>
+      </div>
+
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Seabrew & Co. | Demo website by Palak
+  </footer>
+</body>
+</html>
+

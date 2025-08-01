@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seabrew & Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #fdfbf7;
+      --sea-blue: #6ea9b2;
+      --coffee-brown: #855d45;
+      --sandy-beige: #e8dbc5;
+      --charcoal: #2e2e2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--cream);
+      color: var(--charcoal);
+    }
+
+    header {
+      background: var(--sea-blue);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+      background-size: cover;
+      background-position: center;
+      padding: 8rem 2rem;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #fff4ec;
+      background: rgba(133, 93, 69, 0.8);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    section.about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .about img {
+      max-width: 100%;
+      border-radius: 12px;
+      width: 350px;
+    }
+
+    .about-text {
+      max-width: 500px;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--coffee-brown);
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: var(--sandy-beige);
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta a {
+      background: var(--coffee-brown);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .cta a:hover {
+      background: #6d4636;
+    }
+
+    footer {
+      background: var(--sandy-beige);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--charcoal);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Seabrew & Co.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cafe.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Seabrew & Co.</h1>
+      <p>Coastal vibes, handcrafted coffee, and warm company.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Cafe Interior" />
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Nestled along the coast, Seabrew & Co. is your go-to café for artisan coffee,
+        fresh pastries, and a relaxed seaside atmosphere. Whether you're stopping in for
+        a quiet morning cup or gathering with friends, we bring you warmth, flavor, and
+        the charm of the sea.
+      </p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to taste the seaside?</h2>
+    <a href="cafe.html">Explore Our Menu</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Seabrew & Co. | Demo website by Palak
+  </footer>
+</body>
+</html>
+
+
